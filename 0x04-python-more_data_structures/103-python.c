@@ -47,3 +47,4 @@ void print_python_list(PyObject *p)
 		if (!strcmp(((PyListObject *)p)->ob_item[i]->ob_type->tp_name, "bytes"))
 			print_python_bytes(((PyListObject *)p)->ob_item[i]);
 	}
+}
